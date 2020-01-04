@@ -1,290 +1,361 @@
+
 body {
-    background-color: #bf2929!important;
+  background-color: #bf2929 !important;
 }
 
 a {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 #start {
-   padding-top: 150px;
+  padding-top: 80px;
 }
 
 #start .row {
-    justify-content: center;
+  justify-content: center;
 }
 
 #start h1 {
-    color: #ffffff;
+  color: #ffffff;
 }
+
+.rule {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.rule h5 {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.rule span {
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.form-check {
+  margin-top: 30px;
+}
+
+.form-check label {
+  color: #ffffff;
+}
+
+.hide {
+  display: none!important;
+}
+
 
 
 /*hover btnj*/
 /*#b91111*/
-.content{
+.content {
   display: flex;
-  justify-content:center;
-  padding-top:150px;
+  justify-content: center;
+  padding-top: 70px;
 }
-.try{
- position:relative;
- height:70px;
- width:200px;
+
+.try {
+  position: relative;
+  height: 70px;
+  width: 200px;
 }
-.btnj{
+
+.btnj {
   display: flex;
-  padding:0;
-  color:#b91111;
-  background-color:#fff;
-  height:70px;
-  width:200px;
-  text-align:center;
-  border-color:#b91111;
-  cursor:pointer;
+  padding: 0;
+  color: #b91111;
+  background-color: #fff;
+  height: 70px;
+  width: 200px;
+  text-align: center;
+  border-color: #b91111;
+  cursor: pointer;
 }
 
 
-.btnj span{
-z-index: 2; 
-display: block;
-position: relative;
-width: 100%;
-font-size:15px;
-line-height:65px;
-height: 100%;   
-}
-.btnj:before{
-content: '';
-position: absolute;
-width: 0px;
-top:0;
-left:0;
-height: 70px;
-z-index: 1;
-opacity: 1;
-background-color: #b91111;
-transition: all 0.3s;
-
-}
-.btnj:hover::before{
-opacity: 1;
-width: 200px;
+.btnj span {
+  z-index: 2;
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  line-height: 65px;
+  height: 100%;
 }
 
-.btnj:hover{
-  color:#fff;
+.btnj:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 1;
+  opacity: 1;
+  background-color: #b91111;
+  transition: all 0.3s;
+
+}
+
+.btnj:hover::before {
+  opacity: 1;
+  width: 200px;
+}
+
+.btnj:hover {
+  color: #fff;
   transition: all 0.2s;
 }
 
-.btnj:active{
-  display:none;
+.btnj:active::before {
+  opacity: 0;
+  width: 200px;
 }
 
-.btnj:focus{
-  display:none;
+.btnj:focus::before {
+  opacity: 0;
+  width: 200px;
+}
+
+.btnj:active {
+  display: none;
+}
+
+.btnj:focus {
+  display: none;
 }
 
 /*===========cake===============*/
 .cake {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
-    width: 100px;
-    height: 100px;
-  }
-  /* ============================================== BASE
-  */
-  .cake:after {
-    background: #ebe3e1;
-    border-radius: 100px;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 2px;
-  }
-  /* ============================================== Candle
-  */
-  .velas {
-    background: #ffffff;
-    border-radius: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -2.5px;
-    margin-top: -8.33333333px;
-    width: 5px;
-    height: 16.66666667px;
-  }
-  .velas:after,
-  .velas:before {
-    background: rgba(255, 0, 0, 0.4);
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2.22222222px;
-  }
-  .velas:after {
-    top: 25%;
-    left: 0;
-  }
-  .velas:before {
-    top: 45%;
-    left: 0;
-  }
-  /* ============================================== Fire
-  */
-  .fuego {
-    border-radius: 100%;
-    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    margin-left: -3.33333333px;
-    width: 6.66666667px;
-    height: 12.5px;
-  }
-  .fuego:nth-child(1) {
-    -webkit-animation: fuego 2s infinite;
-            animation: fuego 2s infinite;
-  }
-  .fuego:nth-child(2) {
-    -webkit-animation: fuego 1.5s infinite;
-            animation: fuego 1.5s infinite;
-  }
-  .fuego:nth-child(3) {
-    -webkit-animation: fuego 1s infinite;
-            animation: fuego 1s infinite;
-  }
-  .fuego:nth-child(4) {
-    -webkit-animation: fuego 0.5s infinite;
-            animation: fuego 0.5s infinite;
-  }
-  .fuego:nth-child(5) {
-    -webkit-animation: fuego 0.2s infinite;
-            animation: fuego 0.2s infinite;
-  }
-  /* ============================================== Animation Fire
-  */
-  @-webkit-keyframes fuego {
-    0% {
-      background: rgba(254, 248, 97, 0.5);
-      -webkit-transform: translateY(0) scale(1);
-              transform: translateY(0) scale(1);
-    }
-    50% {
-      background: rgba(255, 50, 0, 0.1);
-      -webkit-transform: translateY(-20px) scale(0);
-              transform: translateY(-20px) scale(0);
-    }
-    100% {
-      background: rgba(254, 248, 97, 0.5);
-      -webkit-transform: translateY(0) scale(1);
-              transform: translateY(0) scale(1);
-    }
-  }
-  @keyframes fuego {
-    0% {
-      background: rgba(254, 248, 97, 0.5);
-      -webkit-transform: translateY(0) scale(1);
-              transform: translateY(0) scale(1);
-    }
-    50% {
-      background: rgba(255, 50, 0, 0.1);
-      -webkit-transform: translateY(-20px) scale(0);
-              transform: translateY(-20px) scale(0);
-    }
-    100% {
-      background: rgba(254, 248, 97, 0.5);
-      -webkit-transform: translateY(0) scale(1);
-              transform: translateY(0) scale(1);
-    }
-  }
-  /* ============================================== Frosting
-  */
-  .cobertura {
-    background: #ece7e3;
-    border-radius: 50px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-left: -27.77777778px;
-    margin-top: -5px;
-    width: 55.55555556px;
-    height: 12.5px;
-    z-index: 10;
-  }
-  .cobertura:after,
-  .cobertura:before {
-    background: #ece7e3;
-    border-radius: 100px;
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 10px;
-  }
-  .cobertura:after {
-    top: 6.66666667px;
-    right: 14.28571429px;
-  }
-  .cobertura:before {
-    top: 10px;
-    right: 9.09090909px;
-  }
-  /* ============================================== BIZCOCHO
-  */
-  .bizcocho {
-    background: #6d3826;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -25px;
-    width: 50px;
-    height: 33.33333333px;
-  }
-  .bizcocho:after,
-  .bizcocho:before {
-    background: rgba(236, 231, 227, 0.6);
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-  }
-  .bizcocho:after {
-    top: 30%;
-    left: 0;
-  }
-  .bizcocho:before {
-    top: 60%;
-    left: 0;
-  }
-  /* ============================================== TEXT
-  */
-  h1,
-  p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  h1 {
-    color: #6c5299;
-    font-size: 1em;
-    margin-top: 6.8em;
-  }
-  p {
-    color: rgba(236, 231, 227, 0.6);
-    font-size: 0.8em;
-    line-height: 2em;
-  }
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+}
 
+/* ============================================== BASE
+  */
+.cake:after {
+  background: #ebe3e1;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+}
 
+/* ============================================== Candle
+  */
+.velas {
+  background: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 16.66666667px;
+}
+
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+  */
+.fuego {
+  border-radius: 100%;
+  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -3.33333333px;
+  width: 6.66666667px;
+  height: 12.5px;
+}
+
+.fuego:nth-child(1) {
+  -webkit-animation: fuego 2s infinite;
+  animation: fuego 2s infinite;
+}
+
+.fuego:nth-child(2) {
+  -webkit-animation: fuego 1.5s infinite;
+  animation: fuego 1.5s infinite;
+}
+
+.fuego:nth-child(3) {
+  -webkit-animation: fuego 1s infinite;
+  animation: fuego 1s infinite;
+}
+
+.fuego:nth-child(4) {
+  -webkit-animation: fuego 0.5s infinite;
+  animation: fuego 0.5s infinite;
+}
+
+.fuego:nth-child(5) {
+  -webkit-animation: fuego 0.2s infinite;
+  animation: fuego 0.2s infinite;
+}
+
+/* ============================================== Animation Fire
+  */
+@-webkit-keyframes fuego {
+  0% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
+  }
+
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fuego {
+  0% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
+  }
+
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ============================================== Frosting
+  */
+.cobertura {
+  background: #ece7e3;
+  border-radius: 50px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -27.77777778px;
+  margin-top: -5px;
+  width: 55.55555556px;
+  height: 12.5px;
+  z-index: 10;
+}
+
+.cobertura:after,
+.cobertura:before {
+  background: #ece7e3;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+}
+
+.cobertura:after {
+  top: 6.66666667px;
+  right: 14.28571429px;
+}
+
+.cobertura:before {
+  top: 10px;
+  right: 9.09090909px;
+}
+
+/* ============================================== BIZCOCHO
+  */
+.bizcocho {
+  background: #6d3826;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 33.33333333px;
+}
+
+.bizcocho:after,
+.bizcocho:before {
+  background: rgba(236, 231, 227, 0.6);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+}
+
+.bizcocho:after {
+  top: 30%;
+  left: 0;
+}
+
+.bizcocho:before {
+  top: 60%;
+  left: 0;
+}
+
+/* ============================================== TEXT
+  */
+h1,
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  color: #6c5299;
+  font-size: 1em;
+  margin-top: 6.8em;
+}
+
+p {
+  color: rgba(236, 231, 227, 0.6);
+  font-size: 0.8em;
+  line-height: 2em;
+}
