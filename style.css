@@ -53,6 +53,13 @@ a {
   top: 15px;
 }
 
+.letter {
+  margin-top: 180px;
+}
+
+.letter span {
+  color: #ffffff;
+}
 
 
 /*hover btnj*/
@@ -137,7 +144,7 @@ a {
 /*===========cake===============*/
 .cake {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   margin-left: -50px;
   margin-top: -50px;
