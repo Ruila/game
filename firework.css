@@ -1,7 +1,123 @@
 body {
-	padding: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 canvas {
-	display: block;
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container .row {
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 45px;
+  color: #ffffff;
+  opacity: 0;
+  font-family: monospace;
+  animation-name: show;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+#tofinal {
+  position: absolute;
+  bottom: 25px;
+}
+
+/*hover btnj*/
+/*#b91111*/
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.try {
+  position: relative;
+  height: 70px;
+  width: 200px;
+}
+
+.btnj {
+  display: flex;
+  padding: 0;
+  color: #b91111;
+  background-color: #fff;
+  height: 70px;
+  width: 200px;
+  text-align: center;
+  border-color: #ffffff;
+  cursor: pointer;
+}
+
+
+.btnj span {
+  z-index: 2;
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  line-height: 65px;
+  height: 100%;
+}
+
+.btnj:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 1;
+  opacity: 1;
+  background-color: #b91111;
+  transition: all 0.3s;
+
+}
+
+.btnj:hover::before {
+  opacity: 1;
+  width: 200px;
+}
+
+.btnj:hover {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.btnj:active::before {
+  opacity: 0;
+  width: 200px;
+}
+
+.btnj:focus::before {
+  opacity: 0;
+  width: 200px;
+}
+
+.btnj:active {
+  display: none;
+}
+
+.btnj:focus {
+  display: none;
 }

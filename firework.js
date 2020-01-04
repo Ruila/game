@@ -143,3 +143,10 @@ $(function() {
 		}
 	}
 })
+
+var startbtn = document.querySelector("#tofinal");
+
+setTimeout(()=>{
+    console.log(startbtn);
+    startbtn.classList.remove("hide");
+}, 3000);

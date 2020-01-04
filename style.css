@@ -1,4 +1,3 @@
-
 body {
   background-color: #bf2929 !important;
 }
@@ -46,7 +45,12 @@ a {
 }
 
 .hide {
-  display: none!important;
+  display: none !important;
+}
+
+#tofinal {
+  position: absolute;
+  top: 15px;
 }
 
 
