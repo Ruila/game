@@ -2,43 +2,53 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
     <link rel='stylesheet' href='bootstrap/css/bootstrap.css' />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+
 </head>
 
 <body>
-    <div id="start" class="container">
-        <div class="row">
-            <h1 class="animated fadeInDown">文書冒險的攻略守則</h1>
-            <div class="col-lg-8 rule">
-                <h5 class="animated fadeInDown">操作說明： "方向鍵" : 控制移動 "X" : 攻擊 "C" : 跳耀</h5>
-                <span class="animated fadeInDown">  
-                    《文書冒險的攻略守則》為一款有關文書處理的RPG冒險遊戲，採用蒸汽朋克風格呈現。遊戲的玩法類似走格子回合制遊戲，
-                    敵我雙方同時移動。遊戲的主旋律是探索解密，解密的玩法類似於推箱子，還要解開各種機關。迷宮中還有各式各樣的敵人，
-                    玩家要通過風騷的走位和巧妙的攻擊來消滅它們，正面硬鋼往往會損失慘重。角色養成方面可以佩戴多種裝備以及學習各種技能和武器精通，
-                    武器方面可以使用近戰武器（物理學聖劍，）和遠程武器（各種槍械，弩箭），也可以選擇盾牌（偏向防守生存）。
-                </span>
-
-                <div class="form-check animated fadeInUp">
-                    <input type="checkbox" class="form-check-input" id="already">
-                    <label class="form-check-label" for="exampleCheck1">已閱讀說明，準備開始</label>
-                  </div>
-            </div>
-            <div id="startbtn" class="content col-lg-12 hide">
-                <a href="./firework.html">
-                    <div class="try animated bounceInUp" >
-                        <button class="btnj">
-                            <span>打開信紙</span>
-                        </button>
+    <div id="login" class="ui middle aligned center aligned grid">
+        <div class="column">
+            <h2 class="ui teal image header">
+                <img src="cat.png" class="image">
+                <div class="content">
+                    闖關者會員登入
+                </div>
+            </h2>
+            <form class="ui large form">
+                <div class="ui stacked segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input id="username" type="text" name="email" placeholder="Username">
+                        </div>
                     </div>
-                </a>
-            </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input id="password" type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div id="loginbtn" class="ui fluid large teal submit button">Login</div>
+                </div>
 
+                <div class="ui error message"></div>
 
+            </form>
+
+            <!-- <div class="ui message">
+                New to us? <a href="#">Sign Up</a>
+            </div> -->
         </div>
     </div>
-    <script type="text/javascript" src="cake.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic.min.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

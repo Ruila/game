@@ -1,0 +1,15 @@
+body {
+  background-color: #bf2929 !important;
+}
+
+#login {
+  margin-top: 150px;
+}
+
+#login .column {
+  max-width: 500px;
+}
+
+.ui.teal.image.header .content {
+  color: #ffffff;
+}
