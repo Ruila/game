@@ -21,12 +21,15 @@ a {
 
 .letter {
   margin: 200px 0;
-  min-height: 600px;
+  padding:50px 25px;
+  min-height: 500px;
   background-color: #ffffff;
 }
 
-.letter span {
-  color: #ffffff;
+.letter p {
+  color: #000000;
+  text-align: start;
+  font-size: 15px;
 }
 
 
